@@ -22,35 +22,13 @@ const todoListContainer ={
 
  }
 
- const todos = [
-  {
-    id:1,
-    text:'Learn React',
-    isCompeleted:'False'
  
-  },
-  {
-    id:2,
-    text:'Learn Nodejs',
-    isCompeleted:'False'
-  },
-  {
-    id:3,
-    text:'Learn MongoDB',
-    isCompeleted:'False'
-  },
-  {
-    id:4,
-    text:'Learn Angular',
-    isCompeleted:'False'
-  },
-]
 function App() {  
   return (
     <div style={bodyContainer}>
-      <div style={todoListContainer}>
-        <h1>Accio ToDo</h1>
-        <List todoe={todos}/>
+      <div style={todoListContainer}>+
+        <h1>Accio ToDo</h1>      
+        <List/>
       </div>
     </div>
   );
