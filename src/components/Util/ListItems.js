@@ -3,10 +3,14 @@ import './ListItems.css'
 
 
 function ListItems(props) {
+
+  const handleDelete = () =>{
+    props.deleteItem(props.id);
+  }
   return (
     <div className="todo-item">
       <p>{props.texts}</p>
-      <svg
+      <svg onClick={handleDelete}
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
